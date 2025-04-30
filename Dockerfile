@@ -6,6 +6,7 @@ WORKDIR /app
 
 # Copia el script Python al contenedor
 COPY etlejemplo.py .
+#COPY requirements.txt .
 
 # Instala las dependencias
 RUN pip install --no-cache-dir requests beautifulsoup4 pandas plotly
